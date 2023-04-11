@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DED37165-2A50-4E31-86F5-7FDE5242443E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISpan.Inseparable.SqlDataLayer</RootNamespace>
+    <AssemblyName>ISpan.Inseparable.SqlDataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityParticipants.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorRepository.cs" />
+    <Compile Include="Administrators.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Articles.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cinemas.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cities.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comments.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Friends.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inseparable.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inseparable.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inseparable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inseparable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inseparable.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="KeywordDetails.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Keywords.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberFavoriteMovieCategories.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPoints.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Members.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieCategories.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieCategoryDetailExtension.cs" />
+    <Compile Include="MovieCategoryDetailRepository.cs" />
+    <Compile Include="MovieCategoryDetails.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieCategoryExtension.cs" />
+    <Compile Include="MovieCategoryRepository.cs" />
+    <Compile Include="MovieExtension.cs" />
+    <Compile Include="CommentExtension.cs" />
+    <Compile Include="ArticleExtension.cs" />
+    <Compile Include="KeywordExtension.cs" />
+    <Compile Include="KeywordDetailExtension.cs" />
+    <Compile Include="KeywordDetailRepository.cs" />
+    <Compile Include="KeywordRepository.cs" />
+    <Compile Include="ArticleRepository.cs" />
+    <Compile Include="ActivityRepository.cs" />
+    <Compile Include="CinemasRepository.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="MemberRepository.cs" />
+    <Compile Include="MovieLevels.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movies.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderRepository.cs" />
+    <Compile Include="Orders.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategories.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategoryRepository.cs" />
+    <Compile Include="ProductOrderDetailRepository.cs" />
+    <Compile Include="ProductOrderDetails.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="CommentRepository.cs" />
+    <Compile Include="MovieRepository.cs" />
+    <Compile Include="Products.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomRepository.cs" />
+    <Compile Include="Rooms.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeatRepository.cs" />
+    <Compile Include="Seats.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SessionRepository.cs" />
+    <Compile Include="Sessions.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketOrderDetailRepository.cs" />
+    <Compile Include="TicketOrderDetails.cs">
+      <DependentUpon>Inseparable.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Inseparable.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Inseparable.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Inseparable.edmx.diagram">
+      <DependentUpon>Inseparable.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISpan.Inseparable.BLL\ISpan.Inseparable.BLL.csproj">
+      <Project>{b8ddaf64-2b3c-4896-a6e2-93d4d39fee1f}</Project>
+      <Name>ISpan.Inseparable.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Inseparable.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inseparable.edmx</DependentUpon>
+      <LastGenOutput>Inseparable.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Inseparable.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Inseparable.edmx</DependentUpon>
+      <LastGenOutput>Inseparable.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

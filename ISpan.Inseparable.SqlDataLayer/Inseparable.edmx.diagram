@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7f52f4a14b734504b953a24219ec114b" Name="Diagram1">
+        <EntityTypeShape EntityType="InseparableModel.Activities" Width="1.5" PointX="8.25" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.ActivityParticipants" Width="1.5" PointX="10.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Administrators" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Areas" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Articles" Width="1.5" PointX="7.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Cinemas" Width="1.5" PointX="10.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Cities" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Comments" Width="1.5" PointX="9.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Friends" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Gender" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.KeywordDetails" Width="1.5" PointX="9.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Keywords" Width="1.5" PointX="7.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.MemberFavoriteMovieCategories" Width="1.5" PointX="7.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.MemberPoints" Width="1.5" PointX="7.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Members" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.MovieCategories" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.MovieCategoryDetails" Width="1.5" PointX="17.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.MovieLevels" Width="1.5" PointX="13.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Movies" Width="1.5" PointX="15.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Orders" Width="1.5" PointX="12.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.ProductCategories" Width="1.5" PointX="10.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.ProductOrderDetails" Width="1.5" PointX="14.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Products" Width="1.5" PointX="12.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Rooms" Width="1.5" PointX="15.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Seats" Width="1.5" PointX="15.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.Sessions" Width="1.5" PointX="15.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InseparableModel.TicketOrderDetails" Width="1.5" PointX="17.75" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="InseparableModel.FK_ActivityParticipants_Activities1" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_ActivityParticipants_Members1" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Areas_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Members_Areas" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Article_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_ArticleCategoryDetails_Articles" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Comments_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Orders_Cinemas" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Products_Cinemas" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Rooms_Cinemas" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Sessions_Cinemas" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Members_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Comments_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Friends_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Members_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_ArticleCategoryDetails_ArticleCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_MemberFavoriteMovieCategories_Members1" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_MemberFavoriteMovieCategories_MovieCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_MemberPoints_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Orders_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_MovieCategoryDetails_MovieCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_MovieCategoryDetails_Movies" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Movies_MovieLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Sessions_Movies" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_TicketOrderDetails_Movies" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_ProductOrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_TicketOrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Products_ProductCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_ProductOrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Seats_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_Sessions_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_TicketOrderDetails_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_TicketOrderDetails_Seats" ManuallyRouted="false" />
+        <AssociationConnector Association="InseparableModel.FK_TicketOrderDetails_Sessions" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

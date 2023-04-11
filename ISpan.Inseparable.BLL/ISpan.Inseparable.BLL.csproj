@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8DDAF64-2B3C-4896-A6E2-93D4D39FEE1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISpan.Inseparable.BLL</RootNamespace>
+    <AssemblyName>ISpan.Inseparable.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MovieCategoryDetailCreateDto.cs" />
+    <Compile Include="MovieCategoryDetailEntity.cs" />
+    <Compile Include="MovieCategoryDetailSearchDto.cs" />
+    <Compile Include="MovieCategoryDetailService.cs" />
+    <Compile Include="MovieCategoryDetailUpdateDto.cs" />
+    <Compile Include="IMovieCategoryDetailRepository.cs" />
+    <Compile Include="MovieCategoryEntity.cs" />
+    <Compile Include="MovieCategorySearchDto.cs" />
+    <Compile Include="MovieCategoryService.cs" />
+    <Compile Include="MovieCategoryUpdateDto.cs" />
+    <Compile Include="IMovieCategoryRepository.cs" />
+    <Compile Include="MovieCategoryCreateDto.cs" />
+    <Compile Include="KeywordCreateDto.cs" />
+    <Compile Include="KeywordDetailCreateDto.cs" />
+    <Compile Include="KeywordDetailEntity.cs" />
+    <Compile Include="KeywordDetailSearchDto.cs" />
+    <Compile Include="KeywordDetailService.cs" />
+    <Compile Include="KeywordDetailUpdateDto.cs" />
+    <Compile Include="KeywordEntity.cs" />
+    <Compile Include="KeywordSearchDto.cs" />
+    <Compile Include="KeywordService.cs" />
+    <Compile Include="KeywordUpdateDto.cs" />
+    <Compile Include="ArticleCreateDto.cs" />
+    <Compile Include="ArticleEntity.cs" />
+    <Compile Include="ArticleSearchDto.cs" />
+    <Compile Include="ArticleService.cs" />
+    <Compile Include="ArticleUpdateDto.cs" />
+    <Compile Include="CinemaService.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Core\CinemaEntity.cs" />
+    <Compile Include="Core\OrderEntity.cs" />
+    <Compile Include="Core\ProductCategoryEntity.cs" />
+    <Compile Include="Core\ProductEntity.cs" />
+    <Compile Include="Core\ProductOrderEntity.cs" />
+    <Compile Include="Core\RoomEntity.cs" />
+    <Compile Include="Core\SeatEntity.cs" />
+    <Compile Include="Core\SessionEntity.cs" />
+    <Compile Include="Core\TicketOrderEntity.cs" />
+    <Compile Include="Dtos\CinemaCreateDto.cs" />
+    <Compile Include="Dtos\CinemaUpdateDto.cs" />
+    <Compile Include="Dtos\OrderCreateDto.cs" />
+    <Compile Include="Dtos\OrderUpdateDto.cs" />
+    <Compile Include="Dtos\ProductCategoryCreateDto.cs" />
+    <Compile Include="Dtos\ProductCategoryUpdateDto.cs" />
+    <Compile Include="Dtos\ProductCreateDto.cs" />
+    <Compile Include="Dtos\ProductOrderCreateDto.cs" />
+    <Compile Include="Dtos\ProductOrderUpdateDto.cs" />
+    <Compile Include="Dtos\ProductUpdateDto.cs" />
+    <Compile Include="Dtos\RoomCreateDto.cs" />
+    <Compile Include="Dtos\RoomUpdateDto.cs" />
+    <Compile Include="Dtos\SeatCreateDto.cs" />
+    <Compile Include="Dtos\SeatUpdateDto.cs" />
+    <Compile Include="Dtos\SessionCreateDto.cs" />
+    <Compile Include="Dtos\SessionUpdateDto.cs" />
+    <Compile Include="Dtos\TicketOrderCreateDto.cs" />
+    <Compile Include="Dtos\TicketOrderUpdateDto.cs" />
+    <Compile Include="Interface\ICinemaRepository.cs" />
+    <Compile Include="MovieCreateDto.cs" />
+    <Compile Include="MovieSearchDto.cs" />
+    <Compile Include="MovieService.cs" />
+    <Compile Include="MovieUpdateDto.cs" />
+    <Compile Include="IMovieRepository.cs" />
+    <Compile Include="MovieEntity.cs" />
+    <Compile Include="Interface\IGridContainer.cs" />
+    <Compile Include="CommentCreateDto.cs" />
+    <Compile Include="CommentEntity.cs" />
+    <Compile Include="CommentSearchDto.cs" />
+    <Compile Include="CommentService.cs" />
+    <Compile Include="CommentUpdateDto.cs" />
+    <Compile Include="IKeywordDetailRepository.cs" />
+    <Compile Include="IKeywordRepository.cs" />
+    <Compile Include="IArticleRepository.cs" />
+    <Compile Include="ICommentRepository.cs" />
+    <Compile Include="Interface\IOrderRepository.cs" />
+    <Compile Include="Interface\IProductCategoryRepository.cs" />
+    <Compile Include="Interface\IProductOrderRepository.cs" />
+    <Compile Include="Interface\IProductRepository.cs" />
+    <Compile Include="Interface\IRoomRepository.cs" />
+    <Compile Include="Interface\ISeatRepository.cs" />
+    <Compile Include="Interface\ISessionRepository.cs" />
+    <Compile Include="Interface\ITicketOrderRepository.cs" />
+    <Compile Include="OrderService.cs" />
+    <Compile Include="ProductCategoryService.cs" />
+    <Compile Include="ProductOrderService.cs" />
+    <Compile Include="ProductService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomService.cs" />
+    <Compile Include="SeatService.cs" />
+    <Compile Include="SessionService.cs" />
+    <Compile Include="TicketOrderService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
